@@ -31,6 +31,7 @@ public class UserController {
     @PostMapping("/login")
     public User loginUser(@RequestBody User user)
     {
+        System.out.println("omadam");
         return userService.createUser(user);
     }
 }
