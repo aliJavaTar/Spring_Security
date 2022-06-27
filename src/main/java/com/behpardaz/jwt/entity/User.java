@@ -29,6 +29,7 @@ public class User implements Serializable {
             joinColumns = @JoinColumn(name = "email",referencedColumnName = "email"))
     @Enumerated(EnumType.STRING)
     private List<UserRoles> roles;
+
     private Boolean enabled = true;
 
     public User(String email, String password) {
